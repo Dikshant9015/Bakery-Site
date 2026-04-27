@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Menu | Golden Crust Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">GC</span>
+      <span>Golden Crust</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a class="active" href="menu.html">Menu</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="status-pill" href="#favorites">Fav <span data-fav-count>0</span></a>
+      <a class="status-pill cart-pill" href="#cart">Cart <span data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title">
+      <p class="eyebrow">Order online</p>
+      <h1>Bakery Menu</h1>
+      <p>Tap favorite to save your picks, or add items to your cart for pickup.</p>
+    </section>
+
+    <section class="shop-layout">
+      <div>
+        <div class="toolbar" aria-label="Menu filters">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="cakes">Cakes</button>
+          <button class="filter-btn" data-filter="pastries">Pastries</button>
+          <button class="filter-btn" data-filter="bread">Bread</button>
+          <button class="filter-btn" data-filter="cookies">Cookies</button>
+        </div>
+        <div class="product-grid" data-product-list></div>
+      </div>
+
+      <aside class="order-panel" aria-label="Order summary">
+        <section id="cart">
+          <div class="panel-heading">
+            <h2>Your Cart</h2>
+            <button class="text-btn" data-clear-cart>Clear</button>
+          </div>
+          <div class="mini-list" data-cart-items></div>
+          <div class="total-row">
+            <span>Total</span>
+            <strong data-cart-total>$0.00</strong>
+          </div>
+          <button class="btn primary full" data-checkout>Checkout</button>
+        </section>
+
+        <section id="favorites">
+          <div class="panel-heading">
+            <h2>Favorites</h2>
+            <button class="text-btn" data-clear-favs>Clear</button>
+          </div>
+          <div class="mini-list" data-fav-items></div>
+        </section>
+      </aside>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Golden Crust Bakery</p>
+    <p>Open daily from 7:00 AM to 9:00 PM.</p>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>

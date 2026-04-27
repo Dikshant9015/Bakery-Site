@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About | Golden Crust Bakery</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">
+      <span class="brand-mark">GC</span>
+      <span>Golden Crust</span>
+    </a>
+    <nav class="nav-links" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="menu.html">Menu</a>
+      <a class="active" href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="header-actions">
+      <a class="status-pill" href="menu.html#favorites">Fav <span data-fav-count>0</span></a>
+      <a class="status-pill cart-pill" href="menu.html#cart">Cart <span data-cart-count>0</span></a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-title split-title">
+      <div>
+        <p class="eyebrow">Our story</p>
+        <h1>Built around butter, flour, patience, and a lot of love.</h1>
+        <p>Golden Crust began as a tiny neighborhood oven and grew into a bakery known for celebration cakes, laminated pastries, and slow-fermented breads.</p>
+      </div>
+      <img src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&w=900&q=80" alt="Baker preparing fresh dough">
+    </section>
+
+    <section class="section values">
+      <article>
+        <h2>Fresh Daily</h2>
+        <p>We bake in small rounds all day, so croissants stay flaky and loaves hit the shelf warm.</p>
+      </article>
+      <article>
+        <h2>Real Ingredients</h2>
+        <p>Our recipes use butter, seasonal fruit, Belgian-style chocolate, roasted nuts, and natural vanilla.</p>
+      </article>
+      <article>
+        <h2>Made to Share</h2>
+        <p>From office trays to birthday cakes, every item is packed to travel beautifully.</p>
+      </article>
+    </section>
+
+    <section class="process">
+      <img src="https://images.unsplash.com/photo-1608198093002-ad4e005484ec?auto=format&fit=crop&w=1100&q=80" alt="Fresh bread loaves on a bakery table">
+      <div>
+        <p class="eyebrow">The bakery rhythm</p>
+        <h2>Morning breads, afternoon cakes, evening treats.</h2>
+        <p>Our team starts before sunrise with breads and breakfast pastries, then moves into cakes, cookies, and dessert boxes. By evening, the counter is ready for after-work pickups and last-minute celebrations.</p>
+        <a class="btn secondary" href="menu.html">Explore Menu</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>Golden Crust Bakery</p>
+    <p>Handmade treats for everyday joy and special moments.</p>
+  </footer>
+
+  <div class="toast" data-toast role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
